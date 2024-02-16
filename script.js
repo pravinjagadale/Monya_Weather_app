@@ -9,7 +9,7 @@ async function fetchWetherData(cityName){
 	let humidity = document.getElementById("humidity");
 	humidity.innerHTML = data.main.humidity+"g/kg";
 	let temp = document.getElementById("temp");
-	temp.innerHTML = Math.;
+	temp.innerHTML = Math.round((data.main.temp)-273.15)+"c";
 	console.log(data);
 }
 function fetchcity() {
